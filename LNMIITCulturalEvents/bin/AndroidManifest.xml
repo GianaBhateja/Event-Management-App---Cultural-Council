@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lnmiitculturalevents"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:theme="@android:style/Theme.NoTitleBar">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CCAllEvents"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".fc_list"
+            android:label="@string/app_name" >
+           
+        </activity>
+         <activity
+            android:name=".gsec_approve_event"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".gsec_list"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".gsec_upcoming"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".GSecApproval"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".GSecAllEvents"
+            android:label="@string/app_name" >
+           
+        </activity>
+         <activity
+            android:name=".FCAllEvents"
+            android:label="@string/app_name" >
+           
+        </activity>
+         
+           
+        
+         <activity
+            android:name=".EventSubmission"
+            android:label="@string/app_name" >
+           
+        </activity>
+         <activity
+            android:name=".FCApproval"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".ClubsList"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".MainHome"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".EventDetails"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".PinEntryView"
+            android:label="@string/app_name" >
+         
+        </activity>
+        
+        
+        <activity
+            android:name=".AllEvents"
+            android:label="@string/app_name" >
+         
+        </activity>
+        <activity
+            android:name=".GSecApproveEvent"
+            android:label="@string/app_name" >
+         
+        </activity>
+        
+        <activity
+            android:name=".FCApproveEvents"
+            android:label="@string/app_name" >
+         
+        </activity>
+        
+        
+        <activity
+            android:name=".Popupmenu"
+            android:label="@string/app_name" >
+         
+        </activity>
+        
+        
+       </application>
+        <!--  Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+   
+
+</manifest>

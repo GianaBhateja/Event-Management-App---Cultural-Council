@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:background="@drawable/img3"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tveventDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Event Details" />
+
+    <TextView
+        android:id="@+id/tvEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvStartTime"
+        android:layout_alignBottom="@+id/tvStartTime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text="Ending Time" />
+
+    <EditText
+        android:id="@+id/etEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etStartTime"
+        android:layout_alignLeft="@+id/tvEndTime"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/etCoordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvCoordinator"
+        android:layout_alignBottom="@+id/tvCoordinator"
+        android:layout_alignLeft="@+id/etSubEvents"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bGSecApprove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etClub"
+        android:layout_alignParentBottom="true"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/etEventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etSubEvents"
+        android:layout_below="@+id/tveventDetails"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/etClub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDescription"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDate"
+        android:layout_alignBottom="@+id/tvDate"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEventName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etEventName"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/etBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etSubEvents"
+        android:layout_alignLeft="@+id/etInventory"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/etSubEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etClub"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etDescription"
+        android:layout_toLeftOf="@+id/bGSecApprove"
+        android:text="Brief Description" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bGSecApprove"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/tvBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etSubEvents"
+        android:layout_alignLeft="@+id/tvDescription"
+        android:text="Budget" />
+
+    <TextView
+        android:id="@+id/tvStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvClub"
+        android:layout_alignTop="@+id/etStartTime"
+        android:text="Starting Time" />
+
+    <EditText
+        android:id="@+id/etInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvInventory"
+        android:layout_alignBottom="@+id/tvInventory"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/tvCoordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etInventory"
+        android:layout_alignLeft="@+id/tvBudget"
+        android:text="Event Coordinator" />
+
+    <TextView
+        android:id="@+id/tveventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etEventName"
+        android:layout_alignLeft="@+id/etStartTime"
+        android:text="Event Name" />
+
+    <TextView
+        android:id="@+id/tvVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etVenue"
+        android:layout_alignBottom="@+id/etVenue"
+        android:layout_alignLeft="@+id/tveventName"
+        android:text="Venue" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvVenue"
+        android:layout_below="@+id/etVenue"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/tvInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etBudget"
+        android:layout_alignLeft="@+id/tvCoordinator"
+        android:text="Inventory" />
+
+    <TextView
+        android:id="@+id/tvSubEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etSubEvents"
+        android:layout_alignLeft="@+id/tvBudget"
+        android:text="Sub-Events" />
+
+    <TextView
+        android:id="@+id/tvClub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etClub"
+        android:layout_alignLeft="@+id/tvSubEvents"
+        android:text="Club Associated" />
+
+    <EditText
+        android:id="@+id/etStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvCoordinator"
+        android:layout_toLeftOf="@+id/tveventDetails"
+        android:ems="10"
+        android:inputType="time" />
+
+</RelativeLayout>

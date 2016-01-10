@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent" 
+     android:background="@drawable/img4"
+     android:fillViewport="true">
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+     >
+
+        <TextView
+            android:id="@+id/tveventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="Event Name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date" 
+        />
+
+    <TextView
+        android:id="@+id/tvVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="Venue"
+        android:layout_marginLeft="150dp" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Starting Time" />
+<TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvEndTime"
+        android:layout_alignBottom="@+id/tvEndTime"
+        android:layout_centerHorizontal="true"
+        android:text="---" />
+    <TextView
+        android:id="@+id/tvEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:layout_marginLeft="10dp"
+        android:text="EndingTime" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+<TextView
+    android:id="@+id/tvClub"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:text="Club Associated" />
+<TextView
+        android:id="@+id/setClub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="14dp"
+        android:text="Club" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/tvCoordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+         android:text="Event Coordinator" />
+
+    <TextView
+        android:id="@+id/setCoordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="75dp"
+         android:layout_marginTop="18dp"
+        android:text="Coordinator" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/tvSubEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvStartTime"
+        android:layout_below="@+id/tvCoordinator"
+        android:layout_marginTop="15dp"
+        android:text="Sub-Event" />
+
+    <TextView
+        android:id="@+id/setSubEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvSubEvent"
+        android:layout_alignBottom="@+id/tvSubEvent"
+        android:layout_alignLeft="@+id/setCoordinator"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:text="sub_events" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/tvInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSubEvent"
+        android:layout_below="@+id/tvSubEvent"
+        android:layout_marginTop="15dp"
+        android:text="Inventory" />
+
+    <TextView
+        android:id="@+id/setInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvInventory"
+        android:layout_alignLeft="@+id/setSubEvents"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:text="inventory" />
+</LinearLayout>
+    
+
+    
+
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/tvBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvClub"
+        android:layout_below="@+id/tvInventory"
+        android:layout_marginTop="24dp"
+        android:text="Budget" />
+
+    <TextView
+        android:id="@+id/setBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvBudget"
+        android:layout_alignBottom="@+id/tvBudget"
+        android:layout_alignLeft="@+id/setInventory"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="24dp"
+        android:text="Budget" />
+</LinearLayout>
+
+  <Button
+      android:id="@+id/bSave"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:text="Approve" />
+
+  <Button
+      android:id="@+id/bDelete"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:text="  Reject  " />
+
+</LinearLayout>
+</ScrollView>

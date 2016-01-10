@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img2"
+    >
+
+    <Button
+        android:id="@+id/blogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvUpcomingEvents"
+        android:text="Logout" />
+
+    <ImageView
+        android:id="@+id/ivNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_sort_by_size" />
+
+    <TextView
+        android:id="@+id/tvUpcomingEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivNavigation"
+        android:text="Upcoming Events"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="287dp"
+        android:layout_height="336dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvUpcomingEvents"
+        android:layout_marginTop="20dp"
+        android:divider="#0000CC"
+        android:dividerHeight="0.1dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/bapprove"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/approve"
+        android:text="" />
+ 
+</RelativeLayout>
